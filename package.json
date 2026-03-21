@@ -1,0 +1,32 @@
+{
+  "name": "react-application",
+  "version": "1.0.0",
+  "description": "this is react-appliaction practice ",
+  "keywords": [
+    "react",
+    "react-app"
+  ],
+  "homepage": "https://github.com/pawanbhatt6227/react-learning#readme",
+  "bugs": {
+    "url": "https://github.com/pawanbhatt6227/react-learning/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawanbhatt6227/react-learning.git"
+  },
+  "license": "ISC",
+  "author": "Pawan Bhatt",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}

@@ -1,20 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-//jsx -- converted to react element by BABEL ...
+//React Components
+//class based components -- old -- legacy projects only
+//functional components -- new -- make all things in this master this
 
-const jsxHeading = (
-  <h2 id="newHeading" className="newclass" tabIndex="1">
-    "Hello World from jsx"
-  </h2>
-);
-const heading = React.createElement("h1", { id: "hello" }, "hello World");
+const jsxElement = <h3>Hello world from element</h3>;
 
-const final = (
-  <div>
-    {jsxHeading}
-    {heading}
-  </div>
+//functional components
+const HeadingSubComponent = () => (
+  <h2> hello World from functional subcomponent</h2>
 );
+const HeadingComponent = () => {
+  return (
+    <>
+      <h1>Hello world from functional Components</h1>
+      <HeadingSubComponent />
+      {jsxElement}
+      <p>{100 + 200}</p>
+    </>
+  );
+};
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(final);
+root.render(<HeadingComponent />);

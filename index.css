@@ -1,9 +1,66 @@
-#heading {
-  color: rgb(23, 44, 44);
+* {
+  margin: 0;
+  padding: 0;
 }
-#heading {
-  background-color: rgb(144, 140, 140);
-}
-#para1 {
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid blue;
   background-color: blueviolet;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-items {
+  padding: 10px;
+}
+
+.nav-items > ul {
+  display: flex;
+  list-style-type: none;
+  background: #b79696;
+}
+
+.nav-items > ul > li {
+  padding: 20px;
+  margin: 10px;
+}
+
+.rest-container {
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  overflow-x: auto;
+  /* overflow-y: hidden; */
+  gap: 16px;
+  padding: 10px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.container::-webkit-scrollbar {
+  display: none;
+}
+.rest-card {
+  width: 200px;
+  height: 250px;
+
+  background-color: rgb(247, 237, 237);
+}
+
+.rest-card:hover {
+  cursor: pointer;
+  border: 2px solid rgb(191, 182, 182);
+}
+
+.search {
+  padding: 10px;
+}
+
+.food-photo {
+  width: 180px;
+  height: 130px;
+  padding: 10px;
 }

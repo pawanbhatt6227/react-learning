@@ -1,4 +1,4 @@
-const dummyRestaurants = [
+let dummyRestaurants = [
   {
     card: {
       data: {
@@ -6,7 +6,7 @@ const dummyRestaurants = [
         name: "Burger King",
         cloudinaryImageId: "burger123",
         cuisines: ["Burgers", "Fast Food"],
-        avgRating: 4.1,
+        avgRating: 3.8,
         sla: { deliveryTime: 25 },
         costForTwo: "₹300 for two",
         isOpen: true,
@@ -24,7 +24,7 @@ const dummyRestaurants = [
         name: "KFC",
         cloudinaryImageId: "kfc456",
         cuisines: ["Chicken", "Fast Food"],
-        avgRating: 4.3,
+        avgRating: 3.7,
         sla: { deliveryTime: 28 },
         costForTwo: "₹400 for two",
         isOpen: true,

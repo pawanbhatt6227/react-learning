@@ -4,7 +4,7 @@ const RestaurantCard = (props) => {
   const { resData } = props;
 
   //optional chaining
-  const info = resData?.card?.data;
+  const info = resData?.info;
 
   if (!info) return null;
 
@@ -13,7 +13,7 @@ const RestaurantCard = (props) => {
       <img
         className="food-photo"
         //here it is done using string literal
-        src={`${CDN_URL}${info.cloudinaryImageId}`}
+        src={`${CDN_URL}/${info.cloudinaryImageId}`}
         alt={info.name}
       />
       <h2>{info.name}</h2>

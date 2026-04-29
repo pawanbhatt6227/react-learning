@@ -3,6 +3,7 @@ import dummyRestaurants from "../utils/mockData";
 import { useState } from "react";
 import { useEffect } from "react";
 import ShimmerUiBody from "./ShimmerUiBody";
+import { Link } from "react-router-dom";
 
 //whenever state variable changes react triggers a reconciiation cycle(rerenders the component)
 const Body = () => {
@@ -95,7 +96,12 @@ const Body = () => {
       <div className="rest-container">
         {/* js to dynamically create many components (fir eg here cards ) make sure to provide keys... */}
         {dummyFilterCopy.map((restaurant) => (
-          <RestaurantCard key={restaurant.info.id} resData={restaurant} />
+          <Link
+            to={"/restaurant/" + restaurant.info.id}
+            key={restaurant.info.id}
+          >
+            <RestaurantCard resData={restaurant} />
+          </Link>
         ))}
       </div>
     </div>

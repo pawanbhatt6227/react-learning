@@ -88,3 +88,8 @@
   border: 1px solid wheat;
   padding: 10px;
 }
+
+.rest-container a {
+  text-decoration: none;
+  color: blueviolet;
+}

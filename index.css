@@ -93,3 +93,9 @@
   text-decoration: none;
   color: blueviolet;
 }
+
+.user-card {
+  padding: 10px;
+  border: solid rebeccapurple 1px;
+  width: 300px;
+}
